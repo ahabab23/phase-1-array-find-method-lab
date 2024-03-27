@@ -1,1 +1,19 @@
 // code your solution here
+function superbowlWin(array){
+    for(let item of array){
+        if(item.result === "W"){
+            return item["year"];
+        }
+    }
+    
+}
+
+const record = [
+    { year: "2015", result: "W" },
+    { year: "2014", result: "N/A" },
+    { year: "2013", result: "L" },
+    //...
+]
+record.find(superbowlWin)
+
+
